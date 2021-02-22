@@ -16,21 +16,11 @@ public class SpringAnnotationConf {
     Car car () {
         return new Car();
     }
-    //
-    // @Bean
-    // PostService postService() {
-    //     return new PostService();
-    // }
 
     @Bean
     CarService carService () {
         return new CarService(car());
     }
-
-    // @Bean
-    // PostController postController () {
-    //     return new PostController(postService(), carService());
-    // }
 
     @Bean
     CarController carController () {
